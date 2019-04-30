@@ -1,6 +1,6 @@
 # moisesToolkit.Newtonsoft.FluentAPI
 
-## What is FluentNHibernate?
+## What is moisesToolkit.Newtonsoft.FluentAPI?
 Fluent, annotations-less, compile safe, automated, convention-based mappings for Json.NET.
 
 ## Where can I get it?
