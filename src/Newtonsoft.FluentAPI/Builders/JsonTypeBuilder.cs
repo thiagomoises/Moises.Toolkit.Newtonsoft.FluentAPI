@@ -34,7 +34,7 @@ namespace Newtonsoft.FluentAPI.Builders
         }
 
         private void ApplyConfiguration(IJsonPropertyBuilder jsonPropertyBuilder, JsonProperty contract)
-        { 
+        {
             var props = typeof(JsonProperty).GetProperties();
             foreach (var rule in jsonPropertyBuilder.RegisteredRules)
             {
