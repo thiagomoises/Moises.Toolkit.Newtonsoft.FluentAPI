@@ -3,3 +3,7 @@
 ################################################################################
 
 /.vs/Newtonsoft.FluentAPI/v16
+/src/Newtonsoft.FluentAPI/bin/Debug/netstandard2.0
+/src/Newtonsoft.FluentAPI/obj
+/test/Newtonsoft.FluentAPI.Tests/bin/Debug/netcoreapp2.2
+/test/Newtonsoft.FluentAPI.Tests/obj
