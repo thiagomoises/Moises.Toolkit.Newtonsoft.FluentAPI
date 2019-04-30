@@ -1,5 +1,9 @@
 # moisesToolkit.Newtonsoft.FluentAPI
 
+[![Build status](https://ci.appveyor.com/api/projects/status/eb1lp2yq2b1lhh3k?svg=true)](https://ci.appveyor.com/project/thiagomoises/moisestoolkit-newtonsoft-fluentapi) 
+[![NuGet](https://img.shields.io/nuget/v/moisesToolkit.Newtonsoft.FluentAPI.svg)](https://www.nuget.org/packages/moisesToolkit.Newtonsoft.FluentAPI/)
+
+
 ## What is moisesToolkit.Newtonsoft.FluentAPI?
 Fluent, annotations-less, compile safe, automated, convention-based mappings for Json.NET.
 
