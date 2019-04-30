@@ -11,6 +11,7 @@
     <RepositoryType>public</RepositoryType>
     <PackageTags>json, newtonsoft, newtonsoft-json, fluent-api, fluent-api-json</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
