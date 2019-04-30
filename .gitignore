@@ -3,9 +3,11 @@
 ################################################################################
 
 /.vs/Newtonsoft.FluentAPI/v16
-/src/Newtonsoft.FluentAPI/bin/Debug/netstandard2.0
+/src/Newtonsoft.FluentAPI/bin
 /src/Newtonsoft.FluentAPI/obj
-/test/Newtonsoft.FluentAPI.Tests/bin/Debug/netcoreapp2.2
+/test/Newtonsoft.FluentAPI.Tests/bin
 /test/Newtonsoft.FluentAPI.Tests/obj
 /.vs/Newtonsoft.FluentAPI/DesignTimeBuild
-/src/Newtonsoft.FluentAPI/bin/Debug
+/tools
+/.vs
+/.vscode
