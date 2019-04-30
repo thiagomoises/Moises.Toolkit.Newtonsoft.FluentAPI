@@ -7,3 +7,5 @@
 /src/Newtonsoft.FluentAPI/obj
 /test/Newtonsoft.FluentAPI.Tests/bin/Debug/netcoreapp2.2
 /test/Newtonsoft.FluentAPI.Tests/obj
+/.vs/Newtonsoft.FluentAPI/DesignTimeBuild
+/src/Newtonsoft.FluentAPI/bin/Debug
