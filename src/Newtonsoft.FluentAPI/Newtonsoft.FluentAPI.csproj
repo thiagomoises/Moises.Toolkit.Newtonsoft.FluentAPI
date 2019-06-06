@@ -2,16 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageId>moisesToolkit.Newtonsoft.FluentAPI</PackageId>
+    <PackageId>Moises.Toolkit.Newtonsoft.FluentAPI</PackageId>
     <Authors>T. Moises</Authors>
-    <Product>moisesToolkit.Newtonsoft.FluentAPI</Product>
+    <Product>Moises.Toolkit.Newtonsoft.FluentAPI</Product>
     <Description>Fluent, XML-less, compile safe, automated, convention-based mappings for Json.NET.</Description>
     <PackageProjectUrl>https://github.com/thiagomoises/moisesToolkit.Newtonsoft.FluentAPI</PackageProjectUrl>
     <RepositoryUrl>https://github.com/thiagomoises/moisesToolkit.Newtonsoft.FluentAPI</RepositoryUrl>
     <RepositoryType>public</RepositoryType>
     <PackageTags>json, newtonsoft, newtonsoft-json, fluent-api, fluent-api-json</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
