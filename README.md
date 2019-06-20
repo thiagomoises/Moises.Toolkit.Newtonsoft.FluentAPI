@@ -2,6 +2,7 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/76s6v9q5qaav2asu?svg=true)](https://ci.appveyor.com/project/thiagomoises/moises-toolkit-mercadopago-netcore)
 [![NuGet](https://img.shields.io/nuget/v/Moises.Toolkit.Newtonsoft.FluentAPI.svg)](https://www.nuget.org/packages/Moises.Toolkit.Newtonsoft.FluentAPI/)
+[![CodeFactor](https://www.codefactor.io/repository/github/thiagomoises/moises.toolkit.newtonsoft.fluentapi/badge)](https://www.codefactor.io/repository/github/thiagomoises/moises.toolkit.newtonsoft.fluentapi)
 
 
 ## What is Moises.Toolkit.Newtonsoft.FluentAPI?
