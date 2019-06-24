@@ -1,18 +1,19 @@
-# moisesToolkit.Newtonsoft.FluentAPI
+# Moises.Toolkit.Newtonsoft.FluentAPI
 
-[![Build status](https://ci.appveyor.com/api/projects/status/eb1lp2yq2b1lhh3k?svg=true)](https://ci.appveyor.com/project/thiagomoises/moisestoolkit-newtonsoft-fluentapi) 
-[![NuGet](https://img.shields.io/nuget/v/moisesToolkit.Newtonsoft.FluentAPI.svg)](https://www.nuget.org/packages/moisesToolkit.Newtonsoft.FluentAPI/)
+[![Build status](https://ci.appveyor.com/api/projects/status/76s6v9q5qaav2asu?svg=true)](https://ci.appveyor.com/project/thiagomoises/moises-toolkit-mercadopago-netcore)
+[![NuGet](https://img.shields.io/nuget/v/Moises.Toolkit.Newtonsoft.FluentAPI.svg)](https://www.nuget.org/packages/Moises.Toolkit.Newtonsoft.FluentAPI/)
+[![CodeFactor](https://www.codefactor.io/repository/github/thiagomoises/moises.toolkit.newtonsoft.fluentapi/badge)](https://www.codefactor.io/repository/github/thiagomoises/moises.toolkit.newtonsoft.fluentapi)
 
 
-## What is moisesToolkit.Newtonsoft.FluentAPI?
+## What is Moises.Toolkit.Newtonsoft.FluentAPI?
 Fluent, annotations-less, compile safe, automated, convention-based mappings for Json.NET.
 
 ## Where can I get it?
 
-Install using the [moisesToolkit.Newtonsoft.FluentAPI NuGet package](https://www.nuget.org/packages/moisesToolkit.Newtonsoft.FluentAPI):
+Install using the [Moises.Toolkit.Newtonsoft.FluentAPI NuGet package](https://www.nuget.org/packages/Moises.Toolkit.Newtonsoft.FluentAPI):
 
 ```
-dotnet add package moisesToolkit.Newtonsoft.FluentAPI
+dotnet add package Moises.Toolkit.Newtonsoft.FluentAPI
 ```
 Obs: compatible with .NetStandard, .NetCore and .NetFramework
 
@@ -43,7 +44,7 @@ public class TestJsonTypeConfiguration : IJsonTypeConfiguration<UserTest>
     }
 }
 ```
-Obs: [consider the test model](https://github.com/thiagomoises/moisesToolkit.Newtonsoft.FluentAPI/blob/master/test/Newtonsoft.FluentAPI.Tests/ModelTest.cs)
+Obs: [consider the test model](https://github.com/thiagomoises/Moises.Toolkit.Newtonsoft.FluentAPI/blob/master/test/Newtonsoft.FluentAPI.Tests/ModelTest.cs)
 
 *After, create your `FluentContractResolver` and set the created map:
 
