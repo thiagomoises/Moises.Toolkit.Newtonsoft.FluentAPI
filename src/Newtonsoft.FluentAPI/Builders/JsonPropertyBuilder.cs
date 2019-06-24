@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -15,12 +16,14 @@ namespace Newtonsoft.FluentAPI.Builders
         TJsonPropertyBuilder HasFieldName(string name);
         TJsonPropertyBuilder HasConverter(JsonConverter jsonConverter);
         TJsonPropertyBuilder IsIgnored(bool ignore = true);
+        TJsonPropertyBuilder AddDefaultValueHandling(DefaultValueHandling defaultValueHandling);
     }
 
     public class JsonPropertyBuilder<TProperty> : IJsonPropertyBuilder<JsonPropertyBuilder<TProperty>>
     {
         public const string CONVERTER_KEY = "Converter";
         public const string PROPERTY_NAME_KEY = "PropertyName";
+        public const string DEFAULT_VALUE_HANDING_KEY = "DefaultValueHandling";
         public const string IGNORED_KEY = "Ignored";
 
         private Dictionary<string, object> _rule { get; } = new Dictionary<string, object>();
@@ -42,6 +45,12 @@ namespace Newtonsoft.FluentAPI.Builders
         public JsonPropertyBuilder<TProperty> HasFieldName(string name)
         {
             AddRule(PROPERTY_NAME_KEY, name);
+            return this;
+        }
+
+        public JsonPropertyBuilder<TProperty> AddDefaultValueHandling(DefaultValueHandling defaultValueHandling)
+        {
+            AddRule(DEFAULT_VALUE_HANDING_KEY, new Nullable<DefaultValueHandling>(defaultValueHandling));
             return this;
         }
 

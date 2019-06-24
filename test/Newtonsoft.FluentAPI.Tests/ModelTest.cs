@@ -11,6 +11,7 @@ namespace Newtonsoft.FluentAPI.Tests
         public int Age { get; set; }
         public UserStatus Status { get; set; }
         public string City { get; set; }
+        public bool IsAdmin { get; set; }
     }
 
     public enum UserStatus

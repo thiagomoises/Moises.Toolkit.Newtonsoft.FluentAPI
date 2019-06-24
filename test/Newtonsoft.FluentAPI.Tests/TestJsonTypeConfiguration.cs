@@ -26,6 +26,10 @@ namespace Newtonsoft.FluentAPI.Tests
 
             jsonTypeBuilder.Property(x => x.City)
                 .IsIgnored();
+
+            jsonTypeBuilder.Property(x => x.IsAdmin)
+                .HasFieldName("is_admin")
+                .AddDefaultValueHandling(Json.DefaultValueHandling.Include);
         }
     }
 }

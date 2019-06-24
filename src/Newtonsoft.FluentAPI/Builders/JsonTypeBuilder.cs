@@ -42,7 +42,10 @@ namespace Newtonsoft.FluentAPI.Builders
                 if (property != null)
                 {
                     var value = rule.Value;
-                    if (property.PropertyType == value.GetType() || property.PropertyType  == value.GetType().BaseType)
+                    var propType = Nullable.GetUnderlyingType(property.PropertyType) ?? property.PropertyType;
+                    var valueType = Nullable.GetUnderlyingType(value.GetType()) ?? value.GetType();
+
+                    if (propType == valueType || propType == value.GetType().BaseType)
                     {
                         property.SetValue(contract, value);
                     }
