@@ -17,6 +17,7 @@ namespace Newtonsoft.FluentAPI.Builders
         TJsonPropertyBuilder HasConverter(JsonConverter jsonConverter);
         TJsonPropertyBuilder IsIgnored(bool ignore = true);
         TJsonPropertyBuilder AddDefaultValueHandling(DefaultValueHandling defaultValueHandling);
+        TJsonPropertyBuilder AddNullValueHandling(NullValueHandling nullValueHandling);
     }
 
     public class JsonPropertyBuilder<TProperty> : IJsonPropertyBuilder<JsonPropertyBuilder<TProperty>>
@@ -24,6 +25,7 @@ namespace Newtonsoft.FluentAPI.Builders
         public const string CONVERTER_KEY = "Converter";
         public const string PROPERTY_NAME_KEY = "PropertyName";
         public const string DEFAULT_VALUE_HANDING_KEY = "DefaultValueHandling";
+        public const string NULL_VALUE_HANDING_KEY = "NullValueHandling";
         public const string IGNORED_KEY = "Ignored";
 
         private Dictionary<string, object> _rule { get; } = new Dictionary<string, object>();
@@ -50,10 +52,16 @@ namespace Newtonsoft.FluentAPI.Builders
 
         public JsonPropertyBuilder<TProperty> AddDefaultValueHandling(DefaultValueHandling defaultValueHandling)
         {
-            AddRule(DEFAULT_VALUE_HANDING_KEY, new Nullable<DefaultValueHandling>(defaultValueHandling));
+            AddRule(DEFAULT_VALUE_HANDING_KEY, defaultValueHandling);
             return this;
         }
 
+        public JsonPropertyBuilder<TProperty> AddNullValueHandling(NullValueHandling  nullValueHandling)
+        {
+            AddRule(NULL_VALUE_HANDING_KEY, nullValueHandling);
+            return this;
+        }
+        
         public JsonPropertyBuilder<TProperty> IsIgnored(bool ignore = true)
         {
             AddRule(IGNORED_KEY, ignore);

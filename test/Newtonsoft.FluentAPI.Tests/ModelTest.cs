@@ -6,6 +6,7 @@ namespace Newtonsoft.FluentAPI.Tests
 {
     public class UserTest
     {
+        public string Nickname { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int Age { get; set; }

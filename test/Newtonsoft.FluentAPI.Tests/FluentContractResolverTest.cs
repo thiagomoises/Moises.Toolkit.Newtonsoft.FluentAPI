@@ -58,6 +58,7 @@ namespace Newtonsoft.FluentAPI.Tests
             {
                 Formatting = Newtonsoft.Json.Formatting.Indented,
                 DefaultValueHandling = DefaultValueHandling.Ignore,
+                NullValueHandling = NullValueHandling.Ignore,
                 ContractResolver = _fcr
             };
 

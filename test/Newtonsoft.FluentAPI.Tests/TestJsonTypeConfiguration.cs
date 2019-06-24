@@ -14,6 +14,11 @@ namespace Newtonsoft.FluentAPI.Tests
             jsonTypeBuilder.Property(x => x.FirstName)
                 .HasFieldName("first_name");
 
+            jsonTypeBuilder.Property(x => x.Nickname)
+                .HasFieldName("nickname")
+                .AddNullValueHandling(Json.NullValueHandling.Ignore)
+                .AddDefaultValueHandling(Json.DefaultValueHandling.Include);
+
             jsonTypeBuilder.Property(x => x.LastName)
                 .HasFieldName("last_name");
 
