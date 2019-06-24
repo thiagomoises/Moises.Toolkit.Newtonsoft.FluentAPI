@@ -10,6 +10,30 @@ var artifactsDirectory = MakeAbsolute(Directory("./artifacts"));
 Setup(context =>
 {
      CleanDirectory(artifactsDirectory);
+	 if (BuildSystem.AppVeyor.IsRunningOnAppVeyor)
+	 {
+		Information("Running on AppVeyor");
+		Information(
+			@"Repository:
+			IsTag: {0}
+			Name: {1}",
+			AppVeyor.Environment.Repository.Tag.IsTag,
+			AppVeyor.Environment.Repository.Tag.Name
+        );
+		Information(
+			@"Repository:
+			IsTag: {0}
+			Name: {1}",
+			BuildSystem.AppVeyor.Environment.Repository.Tag.IsTag,
+			BuildSystem.AppVeyor.Environment.Repository.Tag.Name
+        );
+	 }
+	 else
+	 {
+	 	Information("Not running on AppVeyor");
+	 }
+	 
+
 });
 
 Task("Build")
